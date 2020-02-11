@@ -66,7 +66,7 @@ while True:
 
     expire = (datetime.now() + timedelta(hours=4)).strftime("%d.%m.%Y %H:%M")
     link = dbx.files_get_temporary_link(path=dropbox_file_name).link
-    body = f"Backup data of Let's Be First Bot\nDate: {date_str}\nTemporary download link (expire in {expire}): {link}\nDropbox url: https://www.dropbox.com/home{dropbox_file_name}\nPassword of archive: {password_archive}\nCopyright 2020 BHS Studio"
+    body = f"Backup data of {product_name}\nDate: {date_str}\nTemporary download link (expire in {expire}): {link}\nDropbox url: https://www.dropbox.com/home{dropbox_file_name}\nPassword of archive: {password_archive}\nCopyright 2020 BHS Studio"
     msg.attach(MIMEText(body, 'plain'))                   
     server = smtplib.SMTP(smtp_server, 25)                     
     server.starttls()                          
