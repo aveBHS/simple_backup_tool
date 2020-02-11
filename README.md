@@ -8,7 +8,7 @@
 | №  | Название переменной | Описание переменной | Пример заполнения  |
 |----|---------------------|---------------------|--------------------|
 | 12 | product_name        | Название вашего продукта                    | Simple Backup Tool                   |
-| 13 | dropbox_token       | Токен от облака Dropbox _(см.1)_                    |                    |
+| 13 | dropbox_token       | Токен от облака Dropbox _(см.1)_                    | DA1oIF3n4fAAAAAAAAAA...              |
 | 14 | dropbox_folder      | Папка, в которую загружать файлы на облаке                    | / (корневая папка)                   |
 | 15 | smtp_server      | Сервер отправки писем от вашей исходящей почты _(см.2)_                    | smtp.gmail.com (Gmail)      |
 | 16 | addr_from      | Исходящий адрес почты                    | simplebackuptool@gmail.com                   |
@@ -19,8 +19,8 @@
 | 21 | files_list      | Список файлов и папок для их копирования                    | ./backup/ (все из папки backup)     |
 
 ## Дополнительная информация:
-1.Как получить токен от Dropbox: [Статья на Dropbox Blog](https://blogs.dropbox.com/developers/2014/05/generate-an-access-token-for-your-own-account/ 'Открыть статью')
-2.Список самых популярных SMTP серверов:
+#### 1. Как получить токен от Dropbox: [Статья на Dropbox Blog](https://blogs.dropbox.com/developers/2014/05/generate-an-access-token-for-your-own-account/ 'Открыть статью')
+#### 2.Список самых популярных SMTP серверов:
 | № | Сервис | Адрес | Порт |
 |---|--------|-------|------|
 | 1 | Gmail | smtp.gmail.com | 465 |
