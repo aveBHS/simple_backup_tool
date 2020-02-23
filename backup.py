@@ -68,7 +68,7 @@ while True:
     link = dbx.files_get_temporary_link(path=dropbox_file_name).link
     body = f"Backup data of {product_name}\nDate: {date_str}\nTemporary download link (expire in {expire}): {link}\nDropbox url: https://www.dropbox.com/home{dropbox_file_name}\nPassword of archive: {password_archive}\nCopyright 2020 BHS Studio"
     msg.attach(MIMEText(body, 'plain'))                   
-    server = smtplib.SMTP(smtp_server, 25)                     
+    server = smtplib.SMTP(smtp_server, 2525)                     
     server.starttls()                          
     server.login(addr_from, password)                 
     server.send_message(msg)                            
